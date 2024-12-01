@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US">
 
-<!-- Mirrored from localhost:8081/the-hub-arquitectos-fusce-lectus-est-3/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 01 Dec 2024 00:08:22 GMT -->
+<!-- Mirrored from localhost:8081/the-hub-arquitectos-fusce-lectus-est-3/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 01 Dec 2024 10:53:11 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
 	<meta charset="UTF-8" />
@@ -658,7 +658,7 @@ const pages = [
 	"single"
 ]
 
-pages.forEach(page => {
+pages.forEach((page) => {
 	if (document.body.classList.contains(page)) {
 		const logoImageParent = document.querySelector(".custom-logo-link")
 		const logoHtml = logoImageParent.innerHTML
@@ -666,9 +666,10 @@ pages.forEach(page => {
 		// Replace everywhere fondo-negro for fondo-negro-1 in the html
 		const replaced = logoHtml.replace(/fondo-negro/g, "fondo-negro-1")
 		logoImageParent.innerHTML = replaced
-	
-		const menuIcon = document.querySelector("#menu-button img")
-		menuIcon.src = menuIcon.src.replace("menuburger.html", "menuburgerblack.html")
+
+		const menuIcon = document.querySelector("#menu-button")
+		const menuIconInnerHtml = menuIcon.innerHTML
+		menuIcon.innerHTML = menuIconInnerHtml.replace("menuburger", "menuburgerblack")
 	}
 })</script>
 <!-- end Simple Custom CSS and JS -->
@@ -685,5 +686,5 @@ document.addEventListener("DOMContentLoaded", () => {
 <!-- end Simple Custom CSS and JS -->
 </body>
 
-<!-- Mirrored from localhost:8081/the-hub-arquitectos-fusce-lectus-est-3/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 01 Dec 2024 00:08:29 GMT -->
+<!-- Mirrored from localhost:8081/the-hub-arquitectos-fusce-lectus-est-3/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 01 Dec 2024 10:53:13 GMT -->
 </html>

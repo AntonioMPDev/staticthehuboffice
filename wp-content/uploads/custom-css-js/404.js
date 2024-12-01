@@ -7,7 +7,7 @@ const pages = [
 	"single"
 ]
 
-pages.forEach(page => {
+pages.forEach((page) => {
 	if (document.body.classList.contains(page)) {
 		const logoImageParent = document.querySelector(".custom-logo-link")
 		const logoHtml = logoImageParent.innerHTML
@@ -16,6 +16,9 @@ pages.forEach(page => {
 		const replaced = logoHtml.replace(/fondo-negro/g, "fondo-negro-1")
 		logoImageParent.innerHTML = replaced
 
+		const menuIcon = document.querySelector("#menu-button")
+		const menuIconInnerHtml = menuIcon.innerHTML
+		menuIcon.innerHTML = menuIconInnerHtml.replace("menuburger", "menuburgerblack")
 	}
 })</script>
 <!-- end Simple Custom CSS and JS -->

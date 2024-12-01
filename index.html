@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US">
 
-<!-- Mirrored from localhost:8081/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 01 Dec 2024 00:03:04 GMT -->
+<!-- Mirrored from localhost:8081/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 01 Dec 2024 10:49:02 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
 	<meta charset="UTF-8" />
@@ -340,7 +340,7 @@ ol,ul{box-sizing:border-box}:root :where(.wp-block-list.has-background){padding:
 
 	<div class="entry-content wp-block-post-content has-global-padding is-layout-constrained wp-block-post-content-is-layout-constrained">		<div data-elementor-type="wp-page" data-elementor-id="17" class="elementor elementor-17">
 				<div class="elementor-element elementor-element-69b60d1 e-con-full container-screen e-flex e-con e-parent" data-id="69b60d1" data-element_type="container">
-		<div class="elementor-element elementor-element-4da14ec e-con-full screen loading e-flex elementor-invisible e-con e-child" data-id="4da14ec" data-element_type="container" id="hero-video-container" data-settings="{&quot;background_background&quot;:&quot;video&quot;,&quot;background_video_link&quot;:&quot;https:\/\/www.youtube.com\/watch?v=3LyXtDhg_QE&quot;,&quot;background_play_on_mobile&quot;:&quot;yes&quot;,&quot;animation&quot;:&quot;fadeIn&quot;}">
+		<div class="elementor-element elementor-element-4da14ec e-con-full screen loading e-flex elementor-invisible e-con e-child" data-id="4da14ec" data-element_type="container" id="hero-video-container" data-settings="{&quot;background_background&quot;:&quot;video&quot;,&quot;background_video_link&quot;:&quot;https:\/\/www.youtube.com\/watch?v=TEjHDF9QXTY&quot;,&quot;background_play_on_mobile&quot;:&quot;yes&quot;,&quot;animation&quot;:&quot;fadeIn&quot;}">
 		<div class="elementor-background-video-container">
 							<div class="elementor-background-video-embed"></div>
 						</div>		<div class="elementor-element elementor-element-861dbd9 e-transform elementor-invisible elementor-widget elementor-widget-heading" data-id="861dbd9" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInLeft&quot;,&quot;_transform_scale_effect_hover&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:0.9,&quot;sizes&quot;:[]},&quot;_transform_scale_effect_hover_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;_transform_scale_effect_hover_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]}}" data-widget_type="heading.default">
@@ -725,7 +725,7 @@ const pages = [
 	"single"
 ]
 
-pages.forEach(page => {
+pages.forEach((page) => {
 	if (document.body.classList.contains(page)) {
 		const logoImageParent = document.querySelector(".custom-logo-link")
 		const logoHtml = logoImageParent.innerHTML
@@ -733,9 +733,10 @@ pages.forEach(page => {
 		// Replace everywhere fondo-negro for fondo-negro-1 in the html
 		const replaced = logoHtml.replace(/fondo-negro/g, "fondo-negro-1")
 		logoImageParent.innerHTML = replaced
-	
-		const menuIcon = document.querySelector("#menu-button img")
-		menuIcon.src = menuIcon.src.replace("menuburger.html", "menuburgerblack.html")
+
+		const menuIcon = document.querySelector("#menu-button")
+		const menuIconInnerHtml = menuIcon.innerHTML
+		menuIcon.innerHTML = menuIconInnerHtml.replace("menuburger", "menuburgerblack")
 	}
 })</script>
 <!-- end Simple Custom CSS and JS -->
@@ -752,5 +753,5 @@ document.addEventListener("DOMContentLoaded", () => {
 <!-- end Simple Custom CSS and JS -->
 </body>
 
-<!-- Mirrored from localhost:8081/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 01 Dec 2024 00:04:40 GMT -->
+<!-- Mirrored from localhost:8081/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 01 Dec 2024 10:50:33 GMT -->
 </html>
