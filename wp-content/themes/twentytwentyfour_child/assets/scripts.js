@@ -46,12 +46,12 @@ function scrollEventInitializer() {
 function initializeHero() {
     // add hero overlay after #hero-video-container
     const heroVideoContainer = document.getElementById("hero-video-container");
-    const heroOverlay = document.createElement("div");
-    heroOverlay.classList.add("hero-overlay");
-    const loadingGif = document.createElement("img");
-    loadingGif.src = "/wp-content/uploads/2024/11/loading.gif";
-    loadingGif.classList.add("loading-gif");
-    heroOverlay.appendChild(loadingGif);
+    // const heroOverlay = document.createElement("div");
+    // heroOverlay.classList.add("hero-overlay");
+    // const loadingGif = document.createElement("img");
+    // loadingGif.src = "/wp-content/uploads/2024/11/loading.gif";
+    // loadingGif.classList.add("loading-gif");
+    // heroOverlay.appendChild(loadingGif);
     if (heroVideoContainer) {
         heroVideoContainer.parentNode.insertBefore(heroOverlay, heroVideoContainer.nextSibling);
 
